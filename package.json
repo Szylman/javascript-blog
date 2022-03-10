@@ -10,10 +10,7 @@
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
 
-    "test": "npm-run-all test:html",
-    "test:html": "html-validate *.html",
-
-    "build": "npm-run-all build:* test",
+    "build": "npm-run-all",
     "build:sass": "sass --style=compressed --no-source-map sass:css",
     "build:autoprefixer": "postcss css/*.css --use autoprefixer -d css",
 
